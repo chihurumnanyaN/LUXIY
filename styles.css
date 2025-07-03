@@ -17,38 +17,38 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    max-width: 100%;
     min-height: 13vh;
     background-color:#fdf3e9 ;
     color:  rgb(4, 43, 46);
-    position: absolute;
-    left: 0;
-    right: 0;
+
     z-index: 5;
     border-bottom:  #042b2e solid 0.5px;
     color: #012325;
-      font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    padding: 0 5vw;
 }
 .logo{
      font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style:normal;
   font-size: 2rem;
-  margin-right: 5rem;
+  margin-right: auto;
 }
 .navbar input{
     width: 40vw;
     border-radius: 9px;
     border-style: none;
     height: 3rem;
-      font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     margin-left: 10vw;
     background-color: #f8e4d2;
     color: #042b2e;
+    padding: 1%;
 }
 
 .navbar input::placeholder{
@@ -82,26 +82,56 @@ body{
 .cart-btn{
     padding: 0.8rem;
     margin: 0 20px;
-    border-radius: 9px;
+    border-radius: 50%;
     cursor: pointer;
+}
+.cart-btn:hover{
+    border: #042b2e solid 1px;
 }
 .fas{
     color: #012325;
     font-size: 22px;
     
 } 
-footer{
-    display: none;
+
+.hero{
+    background:linear-gradient(
+  rgba(0, 0, 0, 0.4),
+  rgba(0, 0, 0, 0.4)
+),url(Asset/main\ \(1\).jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 95vh;
+    width: 100%;
+    position: relative;
+    border-radius: 20px;
+    margin-top: 2vh;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30%;
-    width: 100%;
-    min-height: 60vh;
-    background-color: rgb(4, 43, 46);
-    color:  rgb(217, 247, 242);
-
+    text-align: center;
+    gap: 0px;
+    color: #f8e4d2;
 }
+ .hero .text{
+      font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 5em;
+ }
+
+ .hero p{
+          font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1em;
+  color: #012325;
+  background-color: #f8e4d2;
+  border-radius: 999px;
+  padding: 1em;
+ }
 
 footer h2{
    font-weight: 800;
@@ -109,8 +139,16 @@ footer h2{
 
 footer ul{
    list-style: none;
+   display: flex;
+   gap: 1em;
 }
 
 footer .socials a{
     text-decoration: none;
+}
+
+footer .fab{
+        color: #012325;
+    font-size: 15px;
+    
 }
