@@ -30,7 +30,13 @@ body{
     font-style: normal;
     padding: 0 5vw;
 }
-.logo{
+
+.navbar a{
+    text-decoration: none;
+}
+a .logo {
+    text-decoration: none;
+    color: #012325;
      font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style:normal;
@@ -133,6 +139,14 @@ body{
   padding: 1em;
  }
 
+footer{
+    background-color: #f8e4d2;
+    height: 40vh;
+    padding: 0 5vw;
+    font-family: "Poppins", sans-serif;
+    padding-top: 3%;
+}
+
 footer h2{
    font-weight: 800;
 }
@@ -140,7 +154,7 @@ footer h2{
 footer ul{
    list-style: none;
    display: flex;
-   gap: 1em;
+   
 }
 
 footer .socials a{
