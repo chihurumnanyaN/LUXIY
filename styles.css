@@ -8,7 +8,7 @@ body{
 }
 
     main{
-    padding: 0 5vw;
+    padding: 0 6%;
 }
 
 
@@ -28,7 +28,7 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
-    padding: 0 5vw;
+    padding: 0 6%;
 }
 
 .navbar a{
@@ -85,13 +85,17 @@ a .logo {
     border-bottom: solid 2px #012325;
     padding-bottom: 3px;
 }
-.cart-btn{
+
+
+.desk-cart-btn{
     padding: 0.8rem;
-    margin: 0 20px;
+    margin-left:20px;
     border-radius: 50%;
     cursor: pointer;
+    margin-left:auto;
+
 }
-.cart-btn:hover{
+.desk-cart-btn:hover{
     border: #042b2e solid 1px;
 }
 .fas{
@@ -99,6 +103,13 @@ a .logo {
     font-size: 22px;
     
 } 
+
+.navbar .ham{
+    display: none;
+        color: #012325;
+    font-size: 20px;
+    
+}
 
 .hero{
     background:linear-gradient(
@@ -139,21 +150,125 @@ a .logo {
   padding: 1em;
  }
 
+ .products-section{
+    margin: 10vh 0;
+ }
+.small-p{
+    border:  solid #042b2e; 
+    width: auto;
+     border-width:0 0 0 16px;
+     border-radius: 0.5em;
+    display: inline;
+    padding: 2px 4px;
+    font-weight: 600;
+}
+
+.products-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:5%;
+   width:100%;
+  padding: 0;
+  margin: 5vh 0;
+}
+
+.product-card{
+    width:auto;
+    height:60vh;
+      display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.product-img{
+    background-color:#f8dec7;
+    width: 100%;
+    height: 60%;
+    border-radius:5px;
+}
+
+
+.product-info {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.product-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.product-description {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.product-pricing {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.old-price {
+  font-size: 0.9rem;
+  text-decoration: line-through;
+  color: #999;
+}
+
+.rating {
+  font-size: 0.85rem;
+  color: #f39c12;
+}
+
+.product-card button{
+    width: 100%;
+    border: none;
+    background-color: #042b2e;
+    border-radius:5px;
+    height: 10%;
+    margin-top: auto;
+    color: #f8dec7;
+}
+
+
 footer{
-    background-color: #f8e4d2;
+    background-color:#042b2e;
     height: 40vh;
     padding: 0 5vw;
     font-family: "Poppins", sans-serif;
     padding-top: 3%;
+    color: #f8e4d2;
+    text-align: left;
+        display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+
 }
 
 footer h2{
    font-weight: 800;
 }
 
+footer .me {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    border-top:#f8dec7 1px solid ;
+}
 footer ul{
    list-style: none;
    display: flex;
+   gap: 2em;
    
 }
 
@@ -162,7 +277,161 @@ footer .socials a{
 }
 
 footer .fab{
-        color: #012325;
     font-size: 15px;
+    margin: 0;
+    color: #f8e4d2;
+    padding: 2px;
+    border-radius: 2px;
     
+}
+footer .fab:hover{
+color: #042b2e;
+ background-color:#f8dec7
+}
+
+footer .me p{
+    font-size: 1rem;
+    margin-top: auto;
+}
+.mob-cart-btn{
+    display: none;
+}
+
+.sidenav{
+  display: none;
+}
+@media (max-width: 500px) {
+  /* Styles for phones like iPhone SE, small Androids */
+  .navbar input{
+    display: none;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .cart-btn{
+    display: none;
+  }
+  
+  .navbar{
+    justify-content: space-between;
+    
+  }
+  
+  .navbar .ham{
+    display: inline;
+        color: #012325;
+    font-size: 30px;
+        padding: 4px 6px;
+    border-radius: 4px;
+    }
+    
+     .navbar .ham:hover{
+        color: #f8dec7;
+        background-color:#042b2e; 
+    }
+    
+.hero{
+    width: 100%;
+    height: 95vh;
+   
+}
+ .hero .text{
+
+  font-size: 3em;
+ }
+
+ .hero p{
+  font-size: 0.6em;
+ }
+
+ .products-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:1% 5%;
+}
+footer .fab{
+   text-align: center;
+    
+}
+   footer .me{
+    padding-top: 5vh;
+   }
+  footer .socials{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mob-cart-btn{
+    display: inline;
+    position: fixed;
+    top: 80%;
+    left: 80%;
+    right: 5%;
+    bottom: 3%;
+    background-color: #012325;
+    border-radius: 50%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    text-decoration: none;
+    height: 10%;
+    width:15%;
+}
+
+ .mob-cart-btn i{
+    color: #f39c12;
+    padding: 3px;
+    text-decoration: none;
+ }
+
+ .sidenav{
+    display: none;
+    background-color: #042b2e;
+    width: 50%;
+    height: 50vh;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    padding: 5vw;
+    border-radius: 0 0 0 20px ;
+    text-align:left;
+ }
+
+ .sidenav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    list-style: none;
+ }
+ 
+ .sidenav ul a{
+   text-decoration: none;
+   color: #f8dec7;
+   font-size: large;
+ }
+
+ .sidenav .close-icon{
+    color: #f8dec7;
+ }
+}
+
+/* ✅ Small devices (larger phones) */
+@media (max-width: 640px) {
+  /* Styles for bigger phones like iPhone 13, Pixel 7 */
+}
+
+/* ✅ Medium devices (tablets) */
+@media (max-width: 768px) {
+  /* Styles for iPads, 8" tablets, Kindle */
+}
+
+/* ✅ Large tablets / small laptops */
+@media (max-width: 800px) {
+  /* Optional overlap with tablets in landscape */
 }
