@@ -115,7 +115,7 @@ a .logo {
     background:linear-gradient(
   rgba(0, 0, 0, 0.4),
   rgba(0, 0, 0, 0.4)
-),url(Asset/main\ \(1\).jpg);
+),url(Asset/beautiful-black-girl-with-shopping-bags-city.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     background-position:center;
@@ -489,8 +489,6 @@ footer .fab{
   .mob-cart-btn{
     display: inline;
     position: fixed;
-    top: 80%;
-    left: 80%;
     right: 5%;
     bottom: 3%;
     background-color: #012325;
