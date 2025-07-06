@@ -424,6 +424,123 @@ footer .fab{
 /* ✅ Small devices (larger phones) */
 @media (max-width: 640px) {
   /* Styles for bigger phones like iPhone 13, Pixel 7 */
+   .navbar input{
+    display: none;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .cart-btn{
+    display: none;
+  }
+  
+  .navbar{
+    justify-content: space-between;
+    
+  }
+  
+  .navbar .ham{
+    display: inline;
+        color: #012325;
+    font-size: 30px;
+        padding: 4px 6px;
+    border-radius: 4px;
+    }
+    
+     .navbar .ham:hover{
+        color: #f8dec7;
+        background-color:#042b2e; 
+    }
+    
+.hero{
+    width: 100%;
+    height: 95vh;
+   
+}
+ .hero .text{
+
+  font-size: 3em;
+ }
+
+ .hero p{
+  font-size: 0.6em;
+ }
+
+ .products-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:1% 5%;
+}
+footer .fab{
+   text-align: center;
+    
+}
+   footer .me{
+    padding-top: 5vh;
+   }
+  footer .socials{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mob-cart-btn{
+    display: inline;
+    position: fixed;
+    top: 80%;
+    left: 80%;
+    right: 5%;
+    bottom: 3%;
+    background-color: #012325;
+    border-radius: 50%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    text-decoration: none;
+    height: 10%;
+    width:15%;
+}
+
+ .mob-cart-btn i{
+    color: #f39c12;
+    padding: 3px;
+    text-decoration: none;
+ }
+
+ .sidenav{
+    display: none;
+    background-color: #042b2e;
+    width: 50%;
+    height: 50vh;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    padding: 5vw;
+    border-radius: 0 0 0 20px ;
+    text-align:left;
+ }
+
+ .sidenav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    list-style: none;
+ }
+ 
+ .sidenav ul a{
+   text-decoration: none;
+   color: #f8dec7;
+   font-size: large;
+ }
+
+ .sidenav .close-icon{
+    color: #f8dec7;
+ }
 }
 
 /* ✅ Medium devices (tablets) */
