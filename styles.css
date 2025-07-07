@@ -131,6 +131,7 @@ a .logo {
     text-align: center;
     gap: 0px;
     color: #f8e4d2;
+     margin-bottom: 10vh ;
 }
  .hero .text{
       font-family: "Poppins", sans-serif;
@@ -150,6 +151,37 @@ a .logo {
   padding: 1em;
  }
 
+ .category-section{
+  display: flex;
+  flex-direction: column;
+  margin: 10vh 0 ;
+ }
+
+ .categories{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  width:100%;
+ }
+
+ .category{
+  width:70px;
+  height: 70px;
+  border: 2px #042b2e solid;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px;
+ }
+
+  .category h1{
+    font-size: 10px;
+    text-align: center;
+  }
  .products-section{
     margin: 10vh 0;
  }
