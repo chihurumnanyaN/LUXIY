@@ -160,7 +160,7 @@ a .logo {
  .categories{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
   gap: 1em;
@@ -168,20 +168,71 @@ a .logo {
  }
 
  .category{
-  width:70px;
-  height: 70px;
-  border: 2px #042b2e solid;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1px;
+  width:8rem;
+  height: 8rem;
+  border-radius: 20px ;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  color: #f39c12;
+  overflow: hidden;
  }
 
+
   .category h1{
-    font-size: 10px;
+    font-size: 1rem;
     text-align: center;
+    font-weight: 900;
+    text-transform: capitalize; 
+    width: 100%;
+    display: none;
   }
+
+  .category:nth-child(1){
+  background: url(Asset/brock-wegner-7yONARoUsbY-unsplash.jpg);
+  background-size: cover;
+}
+
+.category:nth-child(2){
+  background: url(Asset/female-dress.jfif);
+  background-size: cover;
+}
+
+.category:nth-child(3){
+  background: url(Asset/menAces.jpg);
+  background-size: cover;
+}
+
+
+.category:nth-child(4){
+  background: url(Asset/femaleAces.jpg);
+  background-size: cover;
+}
+
+
+.category:nth-child(5){
+  background: url(Asset/bag.jpg);
+  background-size: cover;
+  background-position:left;
+}
+
+
+.category:nth-child(6){
+  background: url(Asset/perfume.jpg);
+  background-size: cover;
+  background-position:right;
+}
+
+.category:nth-child(7){
+  background: url(Asset/mens-shoe.jfif);
+  background-size: cover;
+}
+
+.category:nth-child(8){
+  background: url(Asset/women\ shoe.jfif);
+  background-size: cover;
+}
+
  .products-section{
     margin: 10vh 0;
  }
@@ -376,6 +427,18 @@ footer .me p{
 
  .hero p{
   font-size: 0.6em;
+ }
+
+ .categories{
+ display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+  width:100%;
+ }
+
+ .category{
+  width:18vw;
+  height:18vw;
  }
 
  .products-container{
