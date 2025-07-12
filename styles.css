@@ -34,6 +34,7 @@ body{
 .navbar a{
     text-decoration: none;
 }
+
 a .logo {
     text-decoration: none;
     color: #012325;
@@ -86,6 +87,9 @@ a .logo {
     padding-bottom: 3px;
 }
 
+.search-icon{
+  display: none;
+}
 
 .desk-cart-btn{
     padding: 0.8rem;
@@ -111,6 +115,9 @@ a .logo {
     
 }
 
+.mobile-search{
+  display: none;
+}
 .hero{
     background:linear-gradient(
   rgba(0, 0, 0, 0.4),
@@ -118,11 +125,11 @@ a .logo {
 ),url(Asset/beautiful-black-girl-with-shopping-bags-city.jpg);
     background-size:cover;
     background-repeat: no-repeat;
-    background-position:center;
-    height: 95vh;
+    background-position:30%;
+    height: 80vh;
     width: 100%;
     position: relative;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
     margin-top: 2vh;
     display: flex;
     flex-direction: column;
@@ -131,7 +138,7 @@ a .logo {
     text-align: center;
     gap: 0px;
     color: #f8e4d2;
-     margin-bottom: 10vh ;
+     margin-bottom: 3vh ;
 }
  .hero .text{
       font-family: "Poppins", sans-serif;
@@ -150,6 +157,41 @@ a .logo {
   border-radius: 999px;
   padding: 1em;
  }
+
+.brands-wrapper {
+    border-radius: 0 0 20px 20px;
+    box-shadow: #fdd9b9 inset;
+  margin: 2vh 0 5vh 0;
+  overflow: hidden;
+  width: 100%;
+  background-color: #fff;
+}
+
+.brands-box {
+  display: flex;
+  gap: 5vh;
+  padding: 5vh 0;
+  animation: scroll-left 30s linear infinite;
+  width: max-content;
+  
+}
+
+.brands-box img {
+  height: 10vh;
+  width: auto;
+  padding: 0 5vh;
+  border-left: 1px #555 solid;
+}
+
+/* Animation Keyframes */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
  .category-section{
   display: flex;
@@ -380,6 +422,18 @@ footer .me p{
     display: none;
 }
 
+.mobile-search{
+    width: 100%;
+    border-style: none;
+    height: 3rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #f8e4d2;
+    color: #042b2e;
+    padding: 5%;
+}
+
 
 .cart-container{
   width: 100vw;
@@ -418,6 +472,113 @@ footer .me p{
 .sidenav{
   display: none;
 }
+.product-page {
+  width: 100vw;
+  height: 100vh;
+  z-index: 6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  display: none;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.prod-box {
+  background-color: #f8dec7;
+  width: 80vw;
+  height: 35rem;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  
+}
+
+.product-image {
+  background: url('Asset/brock-wegner-7yONARoUsbY-unsplash.jpg') no-repeat center center;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+}
+
+.product--info {
+  width: 50%;
+  padding: 2.5rem 2.5rem 4rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items:flex-start;
+  color:#012325;
+  text-align: left;
+}
+
+.product--name {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color:#012325;
+}
+
+.product--description {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.pr{
+  font-weight: 600;
+}
+.product-pricing {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.pprice {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.old-pprice {
+  text-decoration: line-through;
+  color: #a1a1a1;
+}
+
+.isInStock {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 20px 0;
+}
+
+.in-stock {
+  color: #28a745;
+}
+
+.out-of-stock {
+  color: #dc3545;
+}
+
+.aadd-to-cart {
+  padding: 0.75rem 2rem;
+  background-color:#042b2e;
+  width: 100%;
+  color: #fff;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+ 
+}
+
+.aadd-to-cart:hover {
+  background-color:#011516;
+}
+
 @media (max-width: 500px) {
   /* Styles for phones like iPhone SE, small Androids */
   .navbar input{
@@ -450,6 +611,9 @@ footer .me p{
         background-color:#042b2e; 
     }
     
+    .mobile-search{
+      display: block;
+    }
 .hero{
     width: 100%;
     height: 95vh;
@@ -464,6 +628,13 @@ footer .me p{
   font-size: 0.6em;
  }
 
+
+ .brands-box img {
+  height: 5vh;
+  width: auto;
+  padding: 0 3vh;
+  border-left: 1px #555 solid;
+}
  .categories{
  display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -503,7 +674,7 @@ footer .fab{
     bottom: 5%;
     background-color: #012325;
     border-radius: 50%;
-    z-index: 10;
+    z-index: 11;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -511,6 +682,16 @@ footer .fab{
 
 }
 
+.mob-cart-box{
+  position: fixed;
+   bottom: 5%;
+    height:calc(3px + 10vw);
+  
+  width: 100%;
+  display:flex;
+  align-items: flex-end;
+   z-index: 10;
+}
  .mob-cart-btn {
     color: #f39c12;
     padding: 3px;
@@ -527,7 +708,7 @@ footer .fab{
       background:linear-gradient(
   rgba(0, 0, 0, 0.5),
   rgba(0, 0, 0, 0.5));
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
  
@@ -589,7 +770,7 @@ footer .fab{
   
   .navbar{
     justify-content: space-between;
-    
+    height: 7vh;
   }
   
   .navbar .ham{
@@ -602,12 +783,27 @@ footer .fab{
     
      .navbar .ham:hover{
         color: #f8dec7;
-        background-color:#042b2e; 
     }
-    
+
+    .navbar div{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      gap:7px;
+    }
+
+ 
+
+    .mobile-search{
+      display: block;
+      border: none;
+    }
+
 .hero{
     width: 100%;
     height: 95vh;
+    background-position: center;
+    height: 70vh;
    
 }
  .hero .text{
@@ -690,6 +886,37 @@ footer .fab{
  .sidenav .close-icon{
     color: #f8dec7;
  }
+
+ 
+.prod-box {
+  background-color: #f8dec7;
+  width: 80vw;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
+  
+}
+
+.product-image {
+     background-size: cover;
+    width: 100%;
+    height: 50%;
+}
+
+.product--info {
+  width: 50%;
+  height: 50%;
+  padding: 2.5rem 2.5rem 4rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items:flex-start;
+  color:#012325;
+  text-align: left;
+}
+
 }
 
 /* ✅ Medium devices (tablets) */
