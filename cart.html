@@ -23,38 +23,38 @@
    <link rel="icon" type="image/jpg" href="Asset/luxiy-logo.JPG" />
   <!-- Your custom CSS -->
   <link rel="stylesheet" href="styles.css" />
-    <title>product page</title>
+    <title>Luxiy cart</title>
 </head>
 <body>
-     <section class="product-page">
-  <div class="prod-box">         
-    
-    <div class="cart-top"><a href="index.html"><i class="fas fa-xmark close-cart-icon"></i><p>  Go Back To Home Page</p></a></div>     
- 
-    <div class="product-image"></div>
 
-    <div class="product--info">
-      <h1 class="product--name">Luxury Hoodie</h1>
+           <section class="cart-container"> 
+               <div class="cart">
+                
+              <div class="cart-top"><a href="index.html"><i class="fas fa-xmark close-cart-icon"></i><p>  Go Back To Home Page</p></a></div> 
+                    <h2>Your Shopping Cart</h2>
 
-      <p class="product--description">
-          <p class="pr">Product Description</p>
-        <p>Crafted with premium cotton for maximum comfort and luxury. Oversized fit with a unisex design, perfect for any season.
-      </p></p>
+    <div class="cart-content">
 
-      <div class="product-pricing">
-        <span class="pprice">$89.99</span>
-        <span class="old-pprice">$120.00</span>
+      <div class="cart-items">
+        <div class="cart-item">
+          <div  class="Product-Iimage"></div>
+          <div class="item-details">
+            <h4>Luxury Hoodie</h4>
+            <p>$89.99</p>
+            <button class="remove-btn">Remove</button>
+          </div>
+        </div>
+        <!-- Repeat .cart-item for more items -->
       </div>
 
-      <span class="isInStock in-stock">In Stock</span>
-      
-      <button class="aadd-to-cart">Add To Cart</button>
+      <div class="cart-summary">
+        <h3>Total: $89.99</h3>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+
     </div>
-
-  </div>
-</section>
-
-
-           <script src="product-page.js"></script>
+                               </div>
+           </section>
+           <script src="cart.js"></script>
 </body>
 </html>

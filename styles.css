@@ -96,7 +96,7 @@ a .logo {
     margin-left:20px;
     border-radius: 50%;
     cursor: pointer;
-    margin-left:auto;
+    margin-left:10px;
 
 }
 .desk-cart-btn:hover{
@@ -303,6 +303,7 @@ a .logo {
       display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-decoration: none;
 }
 
 
@@ -323,6 +324,7 @@ a .logo {
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 0.25rem;
+  color: #042b2e;
 }
 
 .product-description {
@@ -441,37 +443,137 @@ footer .me p{
   z-index: 6;
   position: fixed;
   top:0;
-  left: 0;
-  bottom: 0;
-      background:linear-gradient(
-  rgba(0, 0, 0, 0.5),
-  rgba(0, 0, 0, 0.5));
-  display: none;
+  background-color:#042b2e ;
+  display: flex;
   justify-content: center;
   align-items: center;
  
 }
 
-.cart{
-  width: 80vw;
-  height: 80vh;
-  background-color: #f8dec7;
-  border-radius: 20px;
-
-}
-.cart .cart-top{
+.cart-top{
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 75vw;
   align-items: flex-end;
-  margin: 5vh;
+  justify-content: flex-end;
+  margin: 3vh;
+  position:absolute;
 }
-.cart .close-cart-icon{
-  
+
+.cart-top a{
+  background-color: #042b2e;
+  border-radius: 20px;
+  align-items:center;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0 5px;
+}
+
+
+.cart-top a i{
+  color: #f8dec7;
+  padding:3px;
+}
+
+.cart-top a p{
+  color: #f8dec7;
+  font-size: 0.8rem;
+  padding:3px;
+}
+
+.cart {
+  width: 80vw;
+  height: 80vh;
+  padding: 2rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f8dec7;
+
+}
+
+.cart-page h2 {
+  margin-bottom: 1rem;
+}
+
+.cart-content {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  color: #012325;
+}
+
+.cart-items {
+  width: 60%;
+  overflow-y: auto;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #fafafa;
+  border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.cart-item .Product-Iimage {
+  background: url("https://via.placeholder.com/80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  background-color: #f8dec7;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+
+.item-details h4 {
+  margin: 0;
+}
+
+.remove-btn {
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  background: #ff4d4f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cart-summary {
+  width: 30%;
+  background: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-btn {
+  padding: 1rem;
+  background:#012325;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
 .sidenav{
   display: none;
 }
+
 .product-page {
   width: 100vw;
   height: 100vh;
@@ -479,8 +581,8 @@ footer .me p{
   position: fixed;
   top: 0;
   left: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  display: none;
+  background-color:#042b2e ;
+  display: flex;
   justify-content: center;
   align-items: center;
   
@@ -493,6 +595,8 @@ footer .me p{
   display: flex;
   border-radius: 20px;
   overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+ 
   
 }
 
