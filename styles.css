@@ -605,6 +605,7 @@ footer .me p{
   background-size: cover;
   width: 50%;
   height: 100%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
 }
 
 .product--info {
@@ -812,19 +813,173 @@ footer .fab{
       background:linear-gradient(
   rgba(0, 0, 0, 0.5),
   rgba(0, 0, 0, 0.5));
-  display: none;
   justify-content: center;
   align-items: center;
  
 }
 
 .cart{
-  width: 90vw;
-  height: 70vh;
+  width: 100vw;
+  height: 100vh;
   background-color: #f8dec7;
   border-radius: 20px;
+}
+.cart-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  color: #012325;
 
 }
+
+
+.cart-top{
+  width: 90vw;
+}
+
+.cart-top p{
+  display :none;
+}
+
+.cart-items {
+  width: 100%;
+  height: auto;
+  overflow-y: auto;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: #fafafa;
+  border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    width: 70vw;
+ 
+}
+
+.cart-item .Product-Iimage {
+  background: url("https://via.placeholder.com/80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  background-color: #f8dec7;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+
+.item-details h4 {
+  margin: 0;
+}
+
+
+
+.cart-summary {
+  width: 65vw;
+  background: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  
+  position:fixed;
+  top:70vh;
+}
+
+.checkout-btn {
+  padding: 1rem;
+  background:#012325;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+
+.product-page {
+  width: 100vw;
+  height: 100vh;
+  z-index: 6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color:#042b2e ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.prod-box {
+  background-color: #f8dec7;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: auto;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  
+  border-radius: 0%;
+ 
+  
+}
+
+.product-image {
+  background: url('Asset/brock-wegner-7yONARoUsbY-unsplash.jpg') no-repeat center center;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.product--info {
+  padding: 2.5rem 2.5rem 4rem 2.5rem;
+  display: flex;
+  color:#012325;
+  text-align: left;
+    width: 50%;
+  height: 100%;
+}
+
+.product--name {
+  font-size: 2rem;
+  font-weight: 700;
+  color:#012325;
+}
+
+.product--description {
+  font-size: 1rem;
+  line-height: 1.6;
+  width:80%;
+  padding:2px;
+}
+
+.pr{
+  font-weight: 600;
+}
+.aadd-to-cart {
+  padding: 0.75rem 2rem;
+  background-color:#042b2e;
+  width: 100%;
+  color: #fff;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+ 
+}
+
+
+
  .sidenav{
     display: none;
     background-color: #042b2e;
@@ -838,7 +993,6 @@ footer .fab{
     border-radius: 0 0 0 20px ;
     text-align:left;
  }
-
  .sidenav ul{
     display: flex;
     flex-direction: column;
@@ -992,15 +1146,23 @@ footer .fab{
  }
 
  
+.cart-top{
+  width: 90vw;
+}
+
+.cart-top p{
+  display :none;
+}
+
+ 
 .prod-box {
   background-color: #f8dec7;
-  width: 80vw;
-  height: 35rem;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  border-radius: 20px;
-  overflow: hidden;
-  
+  border-radius: 0%;
+
 }
 
 .product-image {
@@ -1010,15 +1172,13 @@ footer .fab{
 }
 
 .product--info {
-  width: 50%;
-  height: 50%;
-  padding: 2.5rem 2.5rem 4rem 2.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content:space-between;
-  align-items:flex-start;
+  width: 90%;
+  height: 60%;
+  padding: 1rem 1rem 1rem 1rem;
   color:#012325;
   text-align: left;
+  
+  overflow:auto;
 }
 
 }
